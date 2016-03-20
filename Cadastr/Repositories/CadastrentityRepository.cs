@@ -1,5 +1,7 @@
 ﻿using Cadastr.Common;
 using Cadastr.Models;
+using NHibernate;
+using NHibernate.Criterion;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -37,7 +37,7 @@ namespace Cadastr.Common
         {
             var configuration = new Configuration();
             configuration.Configure();
-            configuration.AddAssembly(typeof(Benzin.Models.Emp).Assembly);
+            configuration.AddAssembly(typeof(Cadastr.Models.Cadastrentity).Assembly);
             
             NHibernate.Tool.hbm2ddl.SchemaUpdate schemaUpdate
                 = new NHibernate.Tool.hbm2ddl.SchemaUpdate(configuration);
