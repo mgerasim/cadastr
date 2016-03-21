@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cadastr.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,7 +14,8 @@ namespace Cadastr.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            List<Cadastrentity> theCadastrList = Cadastrentity.GetAll(); ;
+            return View(theCadastrList);
         }
 
     }

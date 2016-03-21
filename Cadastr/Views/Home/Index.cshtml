@@ -1,5 +1,24 @@
-﻿@{
-    ViewBag.Title = "Index";
+﻿@model List<Cadastr.Models.Cadastrentity>
+@{
+    ViewBag.Title = "Учёт кадастров";
 }
 
-<h2>Index</h2>
+<h2>Кадастры</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Номер</th>
+        </tr>
+    </thead>
+     <tbody>
+         @foreach(var item in Model)
+         {
+             <tr>
+                 <td>@item.ID</td>
+                 <td>@item.ID</td>
+             </tr>
+         }
+     </tbody>
+</table>
